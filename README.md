@@ -1,1 +1,2 @@
 # okaz-js
+# js-okaz
