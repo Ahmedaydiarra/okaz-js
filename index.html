@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="./CSS/font-awesome.css">
+    <link rel="stylesheet" href="./CSS/colors.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <title>OKAZ</title>
+</head>
+
+<body>
+    <div class="">
+        <header class="py-3 px-20 bg-darkblue">
+            <div class="container flex mx-auto justify-between items-center">
+                <div class="flex place-items-center gap-3">
+                    <i class="fa-brands fa-facebook-f fa-lg" style="--fa-primary-color: white"></i>
+                    <i class="fa-brands fa-instagram fa-lg"></i>
+                    <i class="fa-brands fa-twitter fa-lg"></i>
+                </div>
+                <!-- <div class="flex justify-between items-center gap-5">
+                    <div class=" bg-orange hover-bg-blue rounded-lg flex gap-3 place-items-center">
+                        <i class="pl-2 fa-solid fa-circle-user"></i>
+                        <p class="pr-4 text-white">Mon compte</p>
+                    </div>
+                    <i class="place-self-center fa-solid fa-cart-arrow-down fa-lg"></i>
+                </div> -->
+                <div class="flex justify-between items-center gap-5">
+                    <ul class="list-none flex gap-6 justify-between items-center">
+                        <li>
+                            <a id="loginLink" class="text-lg font-light text-white hover-text-orange" href="#" data-bs-toggle="modal">
+                                <i class="fa-solid fa-arrow-right-to-bracket mr-3"></i>Connexion</a>
+                        </li>
+                        <li>
+                            <a id="signupLink" class="text-lg font-light text-white hover-text-orange" href="#" data-bs-toggle="modal">
+                                <i class="fa-solid fa-inbox mr-3"></i>Inscription</a>
+                        </li>
+                    </ul>
+                </div> 
+            </div>
+        </header>
+
+        <nav class="py-4 px-20 border-b-slate-400 border-2 bg-white ">
+            <div class="container mx-auto flex justify-between items-center">
+                <a href="index.php">
+                    <img class="w-20" src="./images/logo_okaz.png" alt="logo_okaz">
+                </a>
+                <ul class="list-none flex gap-6 justify-between items-center">
+                    <li>
+                        <a class="text-xl  text-darkgrey hover-text-orange active-text-orange" href="index.php">Acceuil</a>
+                    </li>
+                    <li>
+                        <a class="text-xl text-darkgrey hover-text-orange active:text-orange" href="#">A propos</a>
+                    </li>
+                    <li>
+                        <a class="text-lg text-darkgrey hover-text-orange active-text-orange" href="shop.php">Boutique</a>
+                    </li>
+                    <li>
+                        <a class="text-lg text-darkgrey hover-text-orange active-text-orange" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+
+    </div>
+
+<!-- SECTION BANNIERE -->
+<section class="bg-black bg-opacity-40 bg-blend-darken bg-hero bg-no-repeat bg-cover bg-center bg-fixed py-40 px-80">
+    <div class="container mx-auto flex-col items-center ">
+        <h1 class="text-4xl text-center text-white font-semibold uppercase tracking-wider leading-10 mb-8">OKAZ, ACHAT ET VENTE DE MEUBLES D'OCCASION EN LIGNE ET EN MAGASIN </h1>
+        <div class="flex justify-center gap-5">
+            <div class=" bg-orange hover-bg-darkgrey rounded-full flex py-2 px-8">
+                <a href="#" class="text-white text-lg font-semibold tracking-wider">J'achète</a>
+            </div>
+            <div class=" bg-blue hover-bg-darkgrey rounded-full flex py-2 px-8">
+                <a href="#" class="text-white text-lg font-semibold tracking-wider">Je vends</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- FIN SECTION BANNIERE -->
+
+<!-- SECTION NOS DERNIERS MEUBLES -->
+<section class="bg-white shadow-slate-400 shadow-md py-24 px-60">
+    <div class="container mx-auto flex-col items-center ">
+
+        <h1 class="text-4xl text-center text-darkblue font-semibold uppercase mb-14 ">Nos derniers meubles d'occasions</h1>
+
+        <!-- Implement the carousel -->
+        <div class=" flex  justify-between mx-auto items-center">
+
+        <!-- Previous button -->
+            <a onclick="moveSlide(-1)">
+                <div class="rounded-full bg-orange hover-bg-darkgrey py-3 px-5">
+                    <i class="fas fa-regular fa-angle-left fa-2x"></i>
+                </div>
+            </a>
+            <div class="slide w-[700px]">
+                <img class="w-full h-[400px] object-cover" src="https://www.kindacode.com/wp-content/uploads/2022/07/flower-1.jpeg">
+                <a href="#">
+                    <div class="w-full px-5 py-3 bg-zinc-600 hover:bg-zinc-800 text-center text-white">Nom de l'article</div>
+                </a>
+            </div>
+
+            <div class="slide w-[700px]">
+                <img class="w-full h-[400px] object-cover" src="https://www.kindacode.com/wp-content/uploads/2022/07/flower-2.jpeg">
+                <a href="#">
+                    <div class="w-full px-5 py-3 bg-zinc-600 hover:bg-zinc-800 text-center text-white ">Nom de l'article</div>
+                </a>
+            </div>
+
+            <div class="slide w-[700px]">
+                <img class="w-full h-[400px] object-cover" src="https://www.kindacode.com/wp-content/uploads/2022/07/flower-3.jpeg">
+                <a href="#">
+                    <div class="w-full px-5 py-3 bg-zinc-600 hover:bg-zinc-800 text-center text-white ">Nom de l'article</div>
+                </a>
+            </div>
+
+            <div class="slide w-[700px]">
+                <img class="w-full h-[400px] object-cover" src="https://www.kindacode.com/wp-content/uploads/2022/07/flower-1.jpeg">
+                <a href="#">
+                    <div class="w-full px-5 py-3 bg-zinc-600 hover:bg-zinc-800 text-center text-white ">Nom de l'article</div>
+                </a>
+
+            </div>
+            <div class="slide w-[700px]">
+                <img class="w-full h-[400px] object-cover" src="https://www.kindacode.com/wp-content/uploads/2022/07/flower-2.jpeg">
+                <a href="#">
+                    <div class="w-full px-5 py-3 bg-zinc-600 hover:bg-zinc-800 text-center text-white ">Nom de l'article</div>
+                </a>
+            </div>
+
+            <!-- Next button -->
+            <a onclick="moveSlide(1)">
+                <div class="rounded-full bg-blue hover-bg-darkgrey py-3 px-5">
+                    <i class="fas fa-regular fa-angle-right fa-2x"></i>
+                </div>
+            </a>
+        </div>
+
+        <br>
+
+        <!-- The dots -->
+        <div class="flex justify-center items-center space-x-5">
+            <div class="dot w-4 h-4 rounded-full cursor-pointer" onclick="currentSlide(1)"></div>
+            <div class="dot w-4 h-4 rounded-full cursor-pointer" onclick="currentSlide(2)"></div>
+            <div class="dot w-4 h-4 rounded-full cursor-pointer" onclick="currentSlide(3)"></div>
+            <div class="dot w-4 h-4 rounded-full cursor-pointer" onclick="currentSlide(4)"></div>
+            <div class="dot w-4 h-4 rounded-full cursor-pointer" onclick="currentSlide(5)"></div>
+        </div>
+    </div>
+</section>
+
+<!-- FIN SECTION NOS DERNIERS MEUBLES -->
+
+<!-- SECTION QUI SOMMES-NOUS-->
+
+<section id="quiSommeNous" class="py-20 px-36 bg-orange">
+    <div class="container mx-auto text-white flex justify-between">
+        <div class="w-3/4 flex-col px-16">
+            <h1 class="text-4xl text-justify font-bold uppercase  mb-10"> QUI SOMMES-NOUS ? </h1>
+            <p class="text-xl tracking-wider  mb-10">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores, reprehenderit pariatur? Dignissimos, voluptate eligendi rem pariatur repudiandae at, aliquid qui a, odit in ducimus illo suscipit praesentium id sed quod? Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                </br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio obcaecati dicta deleniti molestias.
+            </p>
+
+            <div>
+                <a href="#" class="py-3 px-8 rounded-full bg-blue hover-text-darkgrey text-white font-semibold text-lg">
+                <i class="fas fa-regular fa-eye mr-2"></i>En savoir plus
+                </a>
+            </div>
+        </div>
+
+        <div class="w-1/4">
+            <figure class="flex flex-col items-center mt-10">
+                <img src="./images/istockphoto-1194667952-612x612.jpg" alt="pdg_de_okaz" class="rounded-full w-60 mb-4">
+                <figcaption class="text-center font-semibold text-xl tracking-wider ">
+                    Ahmed Diarra </br> PDG de OKAZ
+                </figcaption>
+            </figure>
+        </div>
+    </div>
+</section>
+
+<!-- FIN SECTION QUI SOMMES-NOUS-->
+
+<!-- SECTION RECHERCHE MAGASIN -->
+<footer class="py-16 px-28 bg-darkblue">
+    <div class="container mx-auto flex justify-start  gap-x-28">
+        <ul class="text-white text-2xl  list-disc">
+            <li class="mb-4"><a  href="#">Politique de confidentialité</a></li>
+            <li class="mb-4"><a  href="#">CGU et CGV</a></li>
+            <li><a href="#">Plan du site</a></li>
+        </ul>
+        <ul class="text-white text-2xl  list-disc">
+            <li class="mb-4"><a href="#">FAQ</a></li>
+            <li><a href="#">Nous contacter</a></li>
+        </ul>
+    </div>
+</footer>
+
+<!-- Javascript -->
+<script src="./JS/index.js"></script>
+</body>
+
+</html>
